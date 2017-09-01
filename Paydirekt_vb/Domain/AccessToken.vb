@@ -5,8 +5,6 @@ Imports System.ComponentModel.DataAnnotations
 Imports System.Linq
 Imports System.Web
 
-'author:Sammit neupane
-'Date: 28.08.2017
 
 Namespace Paydirekt_vb.Domain
 
