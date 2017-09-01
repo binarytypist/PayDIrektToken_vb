@@ -24,19 +24,19 @@ Namespace Paydirekt_vb
         '*
         Public Shared AccessTokenList As New ConcurrentDictionary(Of String, AccessToken)()
         Private Const dateFormat As String = "yyyyMMddHHmmss"
-        Const SANDBOX_TOKEN_OBTAIN_ENDPOINT = "https://api.paydirekt.de/api/merchantintegration/v1/token/obtain"
-        Const API_KEY = "e81d298b-60dd-4f46-9ec9-1dbc72f5b5df"
-        Const API_SECRET = "GJlN718sQxN1unxbLWHVlcf0FgXw2kMyfRwD0mgTRME="
+        
+        'refer to vendor
+        Const API_KEY = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        Const API_SECRET = "xxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxy="
 
         '*
         '* Gather all necessary information to generate HTTP Request
         '* 
         '*
         Public Shared Function SecurityClient() As AccessToken
-
-            Dim Request_ID = "627a2766-079b-4ecd-acb6-74ab77c0a871"
+        'UUID to GUID NOT implementation
+            Dim Request_ID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx"
             Dim Current_Date = System.DateTime.Now.ToUniversalTime().ToString("r")
-            'Dim Random_Nonce = "_pQ3emiwKvxeJTBgiWKZN3JVGMj73nHtHde2QmD_ytg5atILhlFT2z81k5c8qW1M"
             Dim Random_Nonce = Nonce.RandomString(64)
             Dim TIme_stamp As String = DateTime.UtcNow.ToString(dateFormat).Replace(":", "")
 
