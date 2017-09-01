@@ -23,7 +23,7 @@ Namespace Paydirekt_vb
         Public Shared AccessTokenList As New ConcurrentDictionary(Of String, AccessToken)()
         Private Const dateFormat As String = "yyyyMMddHHmmss"
         
-        'refer to vendor
+    'additional information required
         Const API_KEY = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
         Const API_SECRET = "xxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxy="
 
