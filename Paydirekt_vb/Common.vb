@@ -8,8 +8,6 @@ Imports Paydirekt_vb.Paydirekt_vb.Security
 
 Imports Newtonsoft.Json
 
-'author:sammit neupane
-'date: 28.08.2017
 
 Namespace Paydirekt_vb
 
