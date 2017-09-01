@@ -12,13 +12,11 @@ Imports System.Drawing
 Imports Paydirekt_vb.Paydirekt_vb.Domain
 Imports Paydirekt_vb.Paydirekt_vb.Common
 
-'Author: Sammit neupane'
-'Date : 28.08.2017
 
 Public Class indexpage
     Inherits System.Web.UI.Page
     'SANDBOX DETAIL
-    Const _TOKEN_OBTAIN_ENDPOINT = "https://api.sandbox.paydirekt.de/api/merchantintegration/v1/token/obtain"
+    Const _TOKEN_OBTAIN_ENDPOINT = "https://"
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         getAccesstoken()
